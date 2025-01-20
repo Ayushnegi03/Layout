@@ -182,11 +182,13 @@ export default function PrimarySearchAppBar() {
           <Box sx={{ flexGrow: 1 }} />
           <Box 
   sx={{ 
-    display: { xs: 'flex', md: 'flex' }, 
+    display: { xs: 'flex' }, 
     position: { xs: 'fixed', md: 'static' },
     alignItems: 'center', 
     justifyContent: 'flex-end', 
     width: '100%', 
+    right: { xs: '10px', md: 'auto' }, // Position on the right for small screens
+    top: { xs: '1px', md: 'auto' }, 
   }}
 >
   <ResponsiveIconButton
